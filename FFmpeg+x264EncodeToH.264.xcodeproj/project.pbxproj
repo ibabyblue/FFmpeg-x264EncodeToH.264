@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D0A30FB202FD80300E2085D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A30FA202FD80300E2085D /* AppDelegate.m */; };
+		4D0A30FE202FD80300E2085D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A30FD202FD80300E2085D /* ViewController.m */; };
+		4D0A3101202FD80300E2085D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A30FF202FD80300E2085D /* Main.storyboard */; };
+		4D0A3103202FD80300E2085D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A3102202FD80300E2085D /* Assets.xcassets */; };
+		4D0A3106202FD80300E2085D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A3104202FD80300E2085D /* LaunchScreen.storyboard */; };
+		4D0A3109202FD80300E2085D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A3108202FD80300E2085D /* main.m */; };
+		4D0A3113202FD80300E2085D /* FFmpeg_x264EncodeToH_264Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A3112202FD80300E2085D /* FFmpeg_x264EncodeToH_264Tests.m */; };
+		4D0A311E202FD80300E2085D /* FFmpeg_x264EncodeToH_264UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A311D202FD80300E2085D /* FFmpeg_x264EncodeToH_264UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D0A310F202FD80300E2085D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D0A30EE202FD80300E2085D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D0A30F5202FD80300E2085D;
+			remoteInfo = "FFmpeg+x264EncodeToH.264";
+		};
+		4D0A311A202FD80300E2085D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D0A30EE202FD80300E2085D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D0A30F5202FD80300E2085D;
+			remoteInfo = "FFmpeg+x264EncodeToH.264";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D0A30F6202FD80300E2085D /* FFmpeg+x264EncodeToH.264.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FFmpeg+x264EncodeToH.264.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D0A30F9202FD80300E2085D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4D0A30FA202FD80300E2085D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4D0A30FC202FD80300E2085D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4D0A30FD202FD80300E2085D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4D0A3100202FD80300E2085D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D0A3102202FD80300E2085D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D0A3105202FD80300E2085D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D0A3107202FD80300E2085D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D0A3108202FD80300E2085D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D0A310E202FD80300E2085D /* FFmpeg+x264EncodeToH.264Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FFmpeg+x264EncodeToH.264Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D0A3112202FD80300E2085D /* FFmpeg_x264EncodeToH_264Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFmpeg_x264EncodeToH_264Tests.m; sourceTree = "<group>"; };
+		4D0A3114202FD80300E2085D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D0A3119202FD80300E2085D /* FFmpeg+x264EncodeToH.264UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FFmpeg+x264EncodeToH.264UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D0A311D202FD80300E2085D /* FFmpeg_x264EncodeToH_264UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFmpeg_x264EncodeToH_264UITests.m; sourceTree = "<group>"; };
+		4D0A311F202FD80300E2085D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D0A30F3202FD80300E2085D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0A310B202FD80300E2085D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0A3116202FD80300E2085D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D0A30ED202FD80300E2085D = {
+			isa = PBXGroup;
+			children = (
+				4D0A30F8202FD80300E2085D /* FFmpeg+x264EncodeToH.264 */,
+				4D0A3111202FD80300E2085D /* FFmpeg+x264EncodeToH.264Tests */,
+				4D0A311C202FD80300E2085D /* FFmpeg+x264EncodeToH.264UITests */,
+				4D0A30F7202FD80300E2085D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D0A30F7202FD80300E2085D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A30F6202FD80300E2085D /* FFmpeg+x264EncodeToH.264.app */,
+				4D0A310E202FD80300E2085D /* FFmpeg+x264EncodeToH.264Tests.xctest */,
+				4D0A3119202FD80300E2085D /* FFmpeg+x264EncodeToH.264UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D0A30F8202FD80300E2085D /* FFmpeg+x264EncodeToH.264 */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A30F9202FD80300E2085D /* AppDelegate.h */,
+				4D0A30FA202FD80300E2085D /* AppDelegate.m */,
+				4D0A30FC202FD80300E2085D /* ViewController.h */,
+				4D0A30FD202FD80300E2085D /* ViewController.m */,
+				4D0A30FF202FD80300E2085D /* Main.storyboard */,
+				4D0A3102202FD80300E2085D /* Assets.xcassets */,
+				4D0A3104202FD80300E2085D /* LaunchScreen.storyboard */,
+				4D0A3107202FD80300E2085D /* Info.plist */,
+				4D0A3108202FD80300E2085D /* main.m */,
+			);
+			path = "FFmpeg+x264EncodeToH.264";
+			sourceTree = "<group>";
+		};
+		4D0A3111202FD80300E2085D /* FFmpeg+x264EncodeToH.264Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A3112202FD80300E2085D /* FFmpeg_x264EncodeToH_264Tests.m */,
+				4D0A3114202FD80300E2085D /* Info.plist */,
+			);
+			path = "FFmpeg+x264EncodeToH.264Tests";
+			sourceTree = "<group>";
+		};
+		4D0A311C202FD80300E2085D /* FFmpeg+x264EncodeToH.264UITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D0A311D202FD80300E2085D /* FFmpeg_x264EncodeToH_264UITests.m */,
+				4D0A311F202FD80300E2085D /* Info.plist */,
+			);
+			path = "FFmpeg+x264EncodeToH.264UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D0A30F5202FD80300E2085D /* FFmpeg+x264EncodeToH.264 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D0A3122202FD80300E2085D /* Build configuration list for PBXNativeTarget "FFmpeg+x264EncodeToH.264" */;
+			buildPhases = (
+				4D0A30F2202FD80300E2085D /* Sources */,
+				4D0A30F3202FD80300E2085D /* Frameworks */,
+				4D0A30F4202FD80300E2085D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FFmpeg+x264EncodeToH.264";
+			productName = "FFmpeg+x264EncodeToH.264";
+			productReference = 4D0A30F6202FD80300E2085D /* FFmpeg+x264EncodeToH.264.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D0A310D202FD80300E2085D /* FFmpeg+x264EncodeToH.264Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D0A3125202FD80300E2085D /* Build configuration list for PBXNativeTarget "FFmpeg+x264EncodeToH.264Tests" */;
+			buildPhases = (
+				4D0A310A202FD80300E2085D /* Sources */,
+				4D0A310B202FD80300E2085D /* Frameworks */,
+				4D0A310C202FD80300E2085D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D0A3110202FD80300E2085D /* PBXTargetDependency */,
+			);
+			name = "FFmpeg+x264EncodeToH.264Tests";
+			productName = "FFmpeg+x264EncodeToH.264Tests";
+			productReference = 4D0A310E202FD80300E2085D /* FFmpeg+x264EncodeToH.264Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D0A3118202FD80300E2085D /* FFmpeg+x264EncodeToH.264UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D0A3128202FD80300E2085D /* Build configuration list for PBXNativeTarget "FFmpeg+x264EncodeToH.264UITests" */;
+			buildPhases = (
+				4D0A3115202FD80300E2085D /* Sources */,
+				4D0A3116202FD80300E2085D /* Frameworks */,
+				4D0A3117202FD80300E2085D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D0A311B202FD80300E2085D /* PBXTargetDependency */,
+			);
+			name = "FFmpeg+x264EncodeToH.264UITests";
+			productName = "FFmpeg+x264EncodeToH.264UITests";
+			productReference = 4D0A3119202FD80300E2085D /* FFmpeg+x264EncodeToH.264UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D0A30EE202FD80300E2085D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = ibabyblue;
+				TargetAttributes = {
+					4D0A30F5202FD80300E2085D = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					4D0A310D202FD80300E2085D = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4D0A30F5202FD80300E2085D;
+					};
+					4D0A3118202FD80300E2085D = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4D0A30F5202FD80300E2085D;
+					};
+				};
+			};
+			buildConfigurationList = 4D0A30F1202FD80300E2085D /* Build configuration list for PBXProject "FFmpeg+x264EncodeToH.264" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D0A30ED202FD80300E2085D;
+			productRefGroup = 4D0A30F7202FD80300E2085D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D0A30F5202FD80300E2085D /* FFmpeg+x264EncodeToH.264 */,
+				4D0A310D202FD80300E2085D /* FFmpeg+x264EncodeToH.264Tests */,
+				4D0A3118202FD80300E2085D /* FFmpeg+x264EncodeToH.264UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D0A30F4202FD80300E2085D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0A3106202FD80300E2085D /* LaunchScreen.storyboard in Resources */,
+				4D0A3103202FD80300E2085D /* Assets.xcassets in Resources */,
+				4D0A3101202FD80300E2085D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0A310C202FD80300E2085D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0A3117202FD80300E2085D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D0A30F2202FD80300E2085D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0A30FE202FD80300E2085D /* ViewController.m in Sources */,
+				4D0A3109202FD80300E2085D /* main.m in Sources */,
+				4D0A30FB202FD80300E2085D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0A310A202FD80300E2085D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0A3113202FD80300E2085D /* FFmpeg_x264EncodeToH_264Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0A3115202FD80300E2085D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0A311E202FD80300E2085D /* FFmpeg_x264EncodeToH_264UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D0A3110202FD80300E2085D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D0A30F5202FD80300E2085D /* FFmpeg+x264EncodeToH.264 */;
+			targetProxy = 4D0A310F202FD80300E2085D /* PBXContainerItemProxy */;
+		};
+		4D0A311B202FD80300E2085D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D0A30F5202FD80300E2085D /* FFmpeg+x264EncodeToH.264 */;
+			targetProxy = 4D0A311A202FD80300E2085D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D0A30FF202FD80300E2085D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D0A3100202FD80300E2085D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D0A3104202FD80300E2085D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D0A3105202FD80300E2085D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D0A3120202FD80300E2085D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4D0A3121202FD80300E2085D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D0A3123202FD80300E2085D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FFmpeg+x264EncodeToH.264/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibabyblue.x264EncodeToH.264.FFmpeg-x264EncodeToH-264";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D0A3124202FD80300E2085D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FFmpeg+x264EncodeToH.264/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibabyblue.x264EncodeToH.264.FFmpeg-x264EncodeToH-264";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4D0A3126202FD80300E2085D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FFmpeg+x264EncodeToH.264Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibabyblue.x264EncodeToH.264.FFmpeg-x264EncodeToH-264Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFmpeg+x264EncodeToH.264.app/FFmpeg+x264EncodeToH.264";
+			};
+			name = Debug;
+		};
+		4D0A3127202FD80300E2085D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FFmpeg+x264EncodeToH.264Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibabyblue.x264EncodeToH.264.FFmpeg-x264EncodeToH-264Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFmpeg+x264EncodeToH.264.app/FFmpeg+x264EncodeToH.264";
+			};
+			name = Release;
+		};
+		4D0A3129202FD80300E2085D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FFmpeg+x264EncodeToH.264UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibabyblue.x264EncodeToH.264.FFmpeg-x264EncodeToH-264UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FFmpeg+x264EncodeToH.264";
+			};
+			name = Debug;
+		};
+		4D0A312A202FD80300E2085D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FFmpeg+x264EncodeToH.264UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibabyblue.x264EncodeToH.264.FFmpeg-x264EncodeToH-264UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FFmpeg+x264EncodeToH.264";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D0A30F1202FD80300E2085D /* Build configuration list for PBXProject "FFmpeg+x264EncodeToH.264" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D0A3120202FD80300E2085D /* Debug */,
+				4D0A3121202FD80300E2085D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D0A3122202FD80300E2085D /* Build configuration list for PBXNativeTarget "FFmpeg+x264EncodeToH.264" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D0A3123202FD80300E2085D /* Debug */,
+				4D0A3124202FD80300E2085D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D0A3125202FD80300E2085D /* Build configuration list for PBXNativeTarget "FFmpeg+x264EncodeToH.264Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D0A3126202FD80300E2085D /* Debug */,
+				4D0A3127202FD80300E2085D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D0A3128202FD80300E2085D /* Build configuration list for PBXNativeTarget "FFmpeg+x264EncodeToH.264UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D0A3129202FD80300E2085D /* Debug */,
+				4D0A312A202FD80300E2085D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D0A30EE202FD80300E2085D /* Project object */;
+}
