@@ -276,6 +276,10 @@ extern "C" {
 {
     
     // 1.将还未输出的AVPacket输出出来
+    int ret = flush_encoder(pFormatCtx, pCodecCtx, 0);
+    if (ret < 0) {
+        printf("Flushing encoder failed\n");
+    }
     av_write_trailer(pFormatCtx);
     
     // 2.关闭资源
@@ -284,5 +288,43 @@ extern "C" {
     
     avio_close(pFormatCtx->pb);
     avformat_free_context(pFormatCtx);
+}
+
+int flush_encoder(AVFormatContext *fmt_ctx, AVCodecContext *codecCtx, unsigned int stream_index)
+{
+    int ret;
+    int framecnt = 0;
+    AVPacket enc_pkt;
+    
+    if (!(codecCtx->codec->capabilities &
+          CODEC_CAP_DELAY))
+        return 0;
+    
+    while (1) {
+        enc_pkt.data = NULL;
+        enc_pkt.size = 0;
+        av_init_packet(&enc_pkt);
+        
+        ret = avcodec_send_frame(codecCtx, NULL);
+        if (ret != 0) {
+            printf("Failed to encode! \n");
+            break;
+        }
+        
+        while (avcodec_receive_packet(codecCtx, &enc_pkt) == 0) {
+            framecnt++;
+            enc_pkt.stream_index = stream_index;
+            //也可以使用C语言函数：fwrite()、fflush()写文件和清空文件写入缓冲区。
+            int wrt = av_write_frame(fmt_ctx, &enc_pkt);
+            if (wrt < 0) {
+                printf("Failed write to file！\n");
+            }
+            //释放packet
+            av_packet_unref(&enc_pkt);
+        }
+        
+        av_frame_free(NULL);
+    }
+    return ret;
 }
 @end
