@@ -170,7 +170,7 @@ extern "C" {
     // 15.初始化原始数据对象: AVFrame
     pFrame = av_frame_alloc();
     
-    // 16.通过像素格式(这里为 YUV)获取图片的真实大小，例如将 480 * 720 转换成 int 类型
+    // 16.通过像素格式(这里为 YUV)获取图片的真实大小，例如将 480 * 640 转换成 int 类型
     av_image_fill_arrays(pFrame->data, pFrame->linesize, picture_buf, pCodecCtx->pix_fmt, pCodecCtx->width, pCodecCtx->height, 1);
     
     // 17.h264 封装格式的文件头部，基本上每种编码都有着自己的格式的头部。
@@ -208,6 +208,7 @@ extern "C" {
         // 获取Y分量长度
         size_t bytesrow0 = CVPixelBufferGetBytesPerRowOfPlane(imageBuffer,0);
         size_t bytesrow1  = CVPixelBufferGetBytesPerRowOfPlane(imageBuffer,1);
+        //YUV格式数据大小:W * H * 1.5 
         UInt8 *yuv420_data = (UInt8 *)malloc(width * height * 3 / 2);
         
         // 3.4.将NV12数据转成YUV420P(I420)数据
@@ -223,7 +224,10 @@ extern "C" {
         {
             for(int i =0;i<width/2;i++)
             {
+                //UVUVUVUV...
+                //获取U数据(第一对UV，U = i * 2 即：0 * 2， 第二对UV，U = i * 2 即：1 * 2 ...)
                 *(pU++) = pUV[i<<1];
+                //获取V数据（第一对UV，V = i * 2 + 1 即：0 * 2 + 1， 第二对UV，V = i * 2 + 1 即：1 * 2 + 1 ...）
                 *(pV++) = pUV[(i<<1) + 1];
             }
             pUV += bytesrow1;
@@ -233,7 +237,7 @@ extern "C" {
         picture_buf = yuv420_data;
         pFrame->data[0] = picture_buf;                   // Y
         pFrame->data[1] = picture_buf + y_size;          // U
-        pFrame->data[2] = picture_buf + y_size * 5 / 4;  // V
+        pFrame->data[2] = picture_buf + y_size * 5 / 4;  // V (1 + 1 / 4 = 5 / 4)
         
         // 4.设置当前帧
         pFrame->pts = framecnt;
